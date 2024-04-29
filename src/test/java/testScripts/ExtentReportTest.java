@@ -70,7 +70,7 @@ public void setup(){
 	  WebElement srcbox=driver.findElement(By.className("gLFyf"));
 	  srcbox.sendKeys("Selenium Tutorial");
 	  srcbox.submit();
-	  Assert.assertEquals(driver.getTitle(), "Selenium1 Tutorial - Google Search");
+	  Assert.assertEquals(driver.getTitle(), "Selenium2 Tutorial - Google Search");
 	  
   }
   
