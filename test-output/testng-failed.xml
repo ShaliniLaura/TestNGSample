@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScripts.GooglePageTest">
+      <class name="testScripts.ExtentReportTest">
         <methods>
+          <include name="finishExtent"/>
           <include name="setup"/>
-          <include name="javaSearchTest"/>
           <include name="tearDown"/>
+          <include name="initExtent"/>
+          <include name="seleniumSearchTest"/>
         </methods>
-      </class> <!-- testScripts.GooglePageTest -->
+      </class> <!-- testScripts.ExtentReportTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
